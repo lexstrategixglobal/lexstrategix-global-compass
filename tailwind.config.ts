@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,34 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Custom colors for Lexstrategix
+				navy: {
+					DEFAULT: '#0A2463',
+					50: '#E6EBFA',
+					100: '#C4D1F5',
+					200: '#7F9FEA',
+					300: '#3C6DDF',
+					400: '#1B4CC5',
+					500: '#0A2463',
+					600: '#071C4C',
+					700: '#041336',
+					800: '#02091F',
+					900: '#000409',
+				},
+				gold: {
+					DEFAULT: '#D5A021',
+					50: '#FBF4E5',
+					100: '#F6E9C9',
+					200: '#EDD293',
+					300: '#E3BC5D',
+					400: '#D5A021',
+					500: '#A67D19',
+					600: '#785A12',
+					700: '#49360B',
+					800: '#1B1304',
+					900: '#000000',
+				},
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +112,26 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					from: {
+						opacity: '0',
+						transform: 'translateY(20px)'
+					},
+					to: {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.5s ease-out forwards'
+			},
+			fontFamily: {
+				serif: ['Merriweather', 'Georgia', 'serif'],
+				sans: ['Inter', 'system-ui', 'sans-serif'],
 			}
 		}
 	},
